@@ -80,6 +80,10 @@ body {
   color: var(--text-color);
 }
 
+.sidebar__navigation__list__item svg {
+  min-width: 48px;
+}
+
 .sidebar__navigation__list__item span {
   display: block;
   padding: 8px 4px;

@@ -1,0 +1,121 @@
+body {
+  background: #0f56b3;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.sidebar {
+  --primary: #0f56b3;
+  --text-color: #787878;
+  --bg-sidebar: #fff;
+  --bg-active: #c5dcfa;
+
+  width: 248px;
+  height: 100vh;
+  background-color: var(--bg-sidebar);
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  box-sizing: border-box;
+  transition: 420ms;
+  overflow: hidden;
+}
+
+.sidebar * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.sidebar__header__content {
+  display: flex;
+  align-items: center;
+  padding: 12px 8px;
+}
+
+.sidebar__header__content p {
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  max-height: 24px;
+}
+
+.sidebar__header__open-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sidebar__navigation__list {
+  width: 100%;
+  list-style: none;
+}
+
+.sidebar__navigation__list__item {
+  margin-right: 8px;
+  border-radius: 0px 12px 12px 0px;
+  transition: 0.6s;
+}
+
+.sidebar__navigation__list__item a {
+  display: flex;
+  align-items: center;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  padding-left: 8px;
+  color: var(--text-color);
+}
+
+.sidebar__navigation__list__item span {
+  display: block;
+  padding: 8px 4px;
+}
+
+.sidebar__navigation__title {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 4px 12px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 158%;
+  text-transform: uppercase;
+}
+
+.sidebar__navigation__list__item--active {
+  background-color: var(--bg-active);
+}
+
+.sidebar__navigation__list__item--active path {
+  stroke: var(--primary);
+}
+
+.sidebar__navigation__list__item--active span {
+  color: var(--primary);
+}
+
+.sidebar.is-open {
+  width: 64px;
+}
+
+.sidebar.is-open .sidebar__header__content,
+.sidebar.is-open a > span,
+.sidebar.is-open .sidebar__navigation__title {
+  display: none;
+}

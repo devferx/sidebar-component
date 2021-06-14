@@ -13,8 +13,213 @@
     />
   </head>
   <body>
-    <aside>
-      <nav></nav>
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <button class="sidebar__header__open-button" id="menu-sidebar-button">
+          <img src="./assets/icons/menu.svg" alt="Menu Icon" />
+        </button>
+
+        <div class="sidebar__header__content">
+          <img src="./assets/image/logo.png" alt="Logo" />
+          <p>No te rindas</p>
+        </div>
+      </div>
+      <nav class="sidebar__navigation">
+        <ul class="sidebar__navigation__list">
+          <li
+            class="
+              sidebar__navigation__list__item
+              sidebar__navigation__list__item--active
+            "
+          >
+            <a href="#">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M33 20V33H15V20"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M35 15H13V20H35V15Z"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 24H26"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Recibidos</span>
+            </a>
+          </li>
+          <li class="sidebar__navigation__list__item">
+            <a href="#">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 14L27.09 20.26L34 21.27L29 26.14L30.18 33.02L24 29.77L17.82 33.02L19 26.14L14 21.27L20.91 20.26L24 14Z"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <span>Destacados</span>
+            </a>
+          </li>
+          <li class="sidebar__navigation__list__item">
+            <a href="#">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 34C29.5228 34 34 29.5228 34 24C34 18.4772 29.5228 14 24 14C18.4772 14 14 18.4772 14 24C14 29.5228 18.4772 34 24 34Z"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M24 18V24L28 26"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <span>Pospuestos</span>
+            </a>
+          </li>
+          <li class="sidebar__navigation__list__item">
+            <a href="#">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34 14L23 25"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M34 14L27 34L23 25L14 21L34 14Z"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <span>Enviados</span>
+            </a>
+          </li>
+        </ul>
+
+        <span class="sidebar__navigation__title">Categorías</span>
+        <ul class="sidebar__navigation__list">
+          <li class="sidebar__navigation__list__item">
+            <a href="#">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 16H32C33.1 16 34 16.9 34 18V30C34 31.1 33.1 32 32 32H16C14.9 32 14 31.1 14 30V18C14 16.9 14.9 16 16 16Z"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M34 18L24 25L14 18"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <span>Recibidos</span>
+            </a>
+          </li>
+          <li class="sidebar__navigation__list__item">
+            <a href="#">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 18H17H33"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20 18V16C20 15.4696 20.2107 14.9609 20.5858 14.5858C20.9609 14.2107 21.4696 14 22 14H26C26.5304 14 27.0391 14.2107 27.4142 14.5858C27.7893 14.9609 28 15.4696 28 16V18M31 18V32C31 32.5304 30.7893 33.0391 30.4142 33.4142C30.0391 33.7893 29.5304 34 29 34H19C18.4696 34 17.9609 33.7893 17.5858 33.4142C17.2107 33.0391 17 32.5304 17 32V18H31Z"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 23V29"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M26 23V29"
+                  stroke="#787878"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <span>Papelera</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </aside>
+
+    <script src="./app.js"></script>
   </body>
 </html>
